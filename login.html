@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mrs culture</title>
+  <link rel="stylesheet" href="{{asset('cssfile/style.css')}}">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap Link -->
+
+  <!-- Font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome cdn -->
+
+  <!-- jQuery Link -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ asset('java/jquery.js')}}"></script>
+  <!-- javascript Link -->
+  <script src="{{ asset('java/javaScript.js')}}"></script>
+</head>
+
+<body>
+<div class="modal-content" style="background-image: url(images/background.jpg); background-size: cover  ;">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+      
+    </div>
+    <div class="modal-body">
+      <form action="fetch" method="POST">
+        <!-- @csrf -->
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="fullname">Full Name</label>
+          <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your full name" required="">
+          <!-- {{-- <span>
+            @error('fullname')
+          {{$message}}
+          @enderror
+          </span> --}} -->
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address"
+            required="">
+            <!-- {{-- <span>
+              @error('email')
+            {{$message}}
+            @enderror
+            </span> --}} -->
+        </div>
+       <div class="form-group" style="display: flex;" style="margin-bottom: 10px;">
+          <label for="gender" style="padding-right: 20px;">Gender</label>
+          <select style="margin-bottom: 10px;"  class="form-control" name="gender" id="gender">
+            <option value="">-Select Gender-</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <!-- {{-- <span>
+              @error('gender')
+            {{$message}}
+            @enderror
+            </span> --}} -->
+        </select>
+
+
+          <!-- <div class="form-check" style="padding-right: 20px;">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required="">
+            <label class="form-check-label" for="male">
+              Male
+            </label>
+          </div>
+          <div class="form-check" style="margin-bottom: 20px;">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">
+              Female
+            </label>
+          </div> -->
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;" required="">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" class="form-control" name="mobileno" id="mobile" placeholder="Enter your mobile number" required="">
+          <!-- {{-- <span>
+            @error('mobileno')
+          {{$message}}
+          @enderror
+          </span> --}} -->
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" id="pass" placeholder="Create Password" required="">
+          <!-- {{-- <span>
+            @error('password')
+          {{$message}}
+          @enderror
+          </span> --}} -->
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="city">City</label>
+          <input type="text" class="form-control" name="city" id="city" required="" placeholder="Enter your city">
+          <!-- {{-- <span>
+            @error('city')
+          {{$message}}
+          @enderror
+          </span> --}} -->
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="submit" id="reg-submit" class="btn btn-warning" onclick="reg()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+h3{
+            color: rgb(0, 64, 255);
+            text-align: center;
+            font-size: xx-large;
+            letter-spacing: 50px;
+            text-shadow: 1px 1px 10px lightgreen, 2px 0px 0px lightseagreen, 0px 0px 10px black;
+        }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h3>Image Gallery</h3>
+ 
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="Destination/des-1_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-2_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-3_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-4_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-5_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-6_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-7_clipdrop-enhance.jpeg" style="width:100%">
+    
+    <img src="Destination/des-8_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-9_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-10_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+
+    <img src="Destination/des-11_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-12_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-13_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-14_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-15_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-16_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-17_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-18_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-19_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-20_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+  <img src="Destination/des-21_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-22_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-23_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-24_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-25_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-26_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-27_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-28_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-29_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-30_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+
+    <img src="Destination/des-31_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-32_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-33_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-34_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-35_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-36_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-37_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-38_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-39_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-40_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+
+    <img src="Destination/des-41_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-42_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-43_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-44_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-45_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-46_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-47_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-48_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-49_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-50_clipdrop-enhance.jpeg" style="width:100%">
+</div>
+<div class="column">
+    <img src="Destination/des-51_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-52_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-53_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-54_clipdrop-enhance.jpeg" style="width:100%">
+    <img src="Destination/des-55_clipdrop-enhance.jpeg" style="width:100%">
+    
+
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
