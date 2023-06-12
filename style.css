@@ -37,7 +37,7 @@ body{
     object-fit: cover;
     height: 120%;
     position: absolute;
-    filter: brightness(60%);
+/*     filter: brightness(60%); */
     margin-left: -10%;
     background-size: cover;
     
